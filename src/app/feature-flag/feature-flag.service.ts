@@ -6,7 +6,7 @@ import { map, tap, shareReplay, concatMap, filter, retry, retryWhen, delayWhen, 
 
 @Injectable()
 export class FeatureFlagService {
-    private url = environment.apiUrl + '/application-environment/st/feature-set';
+    private url = environment.apiUrl + '/application-environment/ps/feature-set';
     private obs: Observable<string[]>;
 
     constructor(private httpClient: HttpClient) {}
